@@ -1,0 +1,10 @@
+{% if farmerdata %}
+
+    <ul>
+    {% for farmer in farmerdata %}
+    <li><a href="/leancrop/{{ farmer }}/">{{ farmer}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <h3>No data</h3>
+{% endif %}
